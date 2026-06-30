@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tutorials</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 class="heading">📚 AI Study Assistant</h1>
+
+</header>
+
+<nav>
+
+<ul class="navbar">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="notes.html">Notes</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="tutorials.html" class="active">Tutorials</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="tutorial-header">
+
+<h1>🎥 Video Tutorials</h1>
+
+<p>
+
+Learn every subject through high-quality YouTube tutorials.
+
+</p>
+
+</section>
+
+<section class="tutorial-search">
+
+<input
+
+type="text"
+
+id="tutorialSearch"
+
+placeholder="🔍 Search Subject..."
+
+onkeyup="searchTutorials()">
+
+</section>
+
+<section class="subjects">
+
+<div id="tutorialSubjects">
+
+<div class="subject-card" onclick="showTutorials('DSA')">📘 DSA</div>
+
+<div class="subject-card" onclick="showTutorials('Python')">🐍 Python</div>
+
+<div class="subject-card" onclick="showTutorials('JavaScript')">⚡ JavaScript</div>
+
+<div class="subject-card" onclick="showTutorials('HTML')">🌐 HTML</div>
+
+<div class="subject-card" onclick="showTutorials('CSS')">🎨 CSS</div>
+
+<div class="subject-card" onclick="showTutorials('Node.js')">🟢 Node.js</div>
+
+<div class="subject-card" onclick="showTutorials('React')">⚛ React</div>
+
+<div class="subject-card" onclick="showTutorials('MongoDB')">🍃 MongoDB</div>
+
+<div class="subject-card" onclick="showTutorials('DBMS')">🗄 DBMS</div>
+
+<div class="subject-card" onclick="showTutorials('OS')">💻 OS</div>
+
+<div class="subject-card" onclick="showTutorials('CN')">🌐 CN</div>
+
+<div class="subject-card" onclick="showTutorials('AI')">🤖 AI</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-heading">
+
+Tutorials
+
+</h2>
+
+<div id="tutorialContainer">
+
+<h3>
+
+Select a Subject
+
+</h3>
+
+</div>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>
+
+⭐ Favorite Tutorials
+
+</h2>
+
+<div id="favoriteContainer">
+
+</div>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>
+
+🕒 Recently Watched
+
+</h2>
+
+<div id="recentContainer">
+
+</div>
+
+</section>
+
+<script src="tutorial.js"></script>
+
+</body>
+
+</html>

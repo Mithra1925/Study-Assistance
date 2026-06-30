@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes | AI Study Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+    <h1 class="heading">📚 AI Study Assistant</h1>
+</header>
+
+<!-- Navigation -->
+
+<nav>
+
+    <ul class="navbar">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="notes.html" class="active">Notes</a></li>
+
+        <li><a href="quiz.html">Quiz</a></li>
+
+        <li><a href="tutorial.html">Tutorials</a></li>
+
+        
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Notes Heading -->
+
+<section class="notes-header">
+
+    <h1>Study Notes</h1>
+
+    <p>
+
+        Search a subject and access official notes.
+
+        You can also create your own notes.
+
+    </p>
+
+</section>
+
+<!-- Search -->
+
+<section class="search-section">
+
+<input
+
+type="text"
+
+id="searchInput"
+
+placeholder="🔍 Search Subject..."
+
+onkeyup="searchSubjects()">
+
+</section>
+
+<!-- Official Subjects -->
+
+<section class="official-subjects">
+
+<h2>Official Study Notes</h2>
+
+<div id="subjectsContainer">
+
+<div class="subject-card"
+
+onclick="showSubject('DSA')">
+
+📘 DSA
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('Python')">
+
+🐍 Python
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('JavaScript')">
+
+⚡ JavaScript
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('HTML')">
+
+🌐 HTML
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('CSS')">
+
+🎨 CSS
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('Node.js')">
+
+🟢 Node.js
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('React')">
+
+⚛ React
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('MongoDB')">
+
+🍃 MongoDB
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('DBMS')">
+
+🗄 DBMS
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('OS')">
+
+💻 Operating Systems
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('CN')">
+
+🌍 Computer Networks
+
+</div>
+
+<div class="subject-card"
+
+onclick="showSubject('AI')">
+
+🤖 Artificial Intelligence
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Subject Viewer -->
+
+<section class="viewer-section">
+
+<div id="viewer">
+
+<h2>
+
+Select any subject above.
+
+</h2>
+
+<p>
+
+After selecting a subject,
+
+you will get
+
+View Notes,
+
+Download Notes
+
+and
+
+Watch Tutorial.
+
+</p>
+
+</div>
+
+</section>
+
+<hr>
+
+<!-- Personal Notes -->
+
+<section class="personal-notes">
+
+<h2>
+
+✍ Create Your Personal Notes
+
+</h2>
+
+<form id="noteForm">
+
+<input
+
+type="text"
+
+id="title"
+
+placeholder="Enter Title"
+
+required>
+
+<input
+
+type="text"
+
+id="topic"
+
+placeholder="Enter Topic"
+
+required>
+
+<textarea
+
+id="description"
+
+placeholder="Write your notes here..."
+
+required>
+
+</textarea>
+
+<button type="submit">
+
+💾 Save Notes
+
+</button>
+
+</form>
+
+</section>
+
+<hr>
+
+<!-- My Saved Notes -->
+
+<section class="saved-notes">
+
+<h2>
+
+📒 My Saved Notes
+
+</h2>
+
+<div id="savedNotes">
+
+<!-- JavaScript will create note cards here -->
+
+</div>
+
+</section>
+
+<script src="notes.js"></script>
+
+</body>
+
+</html>

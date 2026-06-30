@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | AI Study Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1 class="heading">📚 AI Study Assistant</h1>
+
+</header>
+
+<nav>
+
+<ul class="navbar">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="dashboard.html" class="active">Dashboard</a></li>
+
+<li><a href="notes.html">Notes</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="tutorial.html">Tutorials</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Welcome -->
+
+<section class="welcome">
+
+<h1 id="greeting">
+
+Good Morning 👋
+
+</h1>
+
+<p>
+
+Welcome back to AI Study Assistant
+
+</p>
+
+<p id="todayDate"></p>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="statistics">
+
+<div class="stat-card">
+
+<h2>📚</h2>
+
+<h3>Subjects</h3>
+
+<h1>12</h1>
+
+</div>
+
+<div class="stat-card">
+
+<h2>📝</h2>
+
+<h3>My Notes</h3>
+
+<h1 id="noteCount">
+
+0
+
+</h1>
+
+</div>
+
+<div class="stat-card">
+
+<h2>🤖</h2>
+
+<h3>Quizzes</h3>
+
+<h1 id="quizCount">
+
+0
+
+</h1>
+
+</div>
+
+<div class="stat-card">
+
+<h2>🔥</h2>
+
+<h3>Streak</h3>
+
+<h1>
+
+7 Days
+
+</h1>
+
+</div>
+
+</section>
+
+<!-- Today's Tasks -->
+
+<section class="tasks">
+
+<h2>
+
+📅 Today's Tasks
+
+</h2>
+
+<div class="task-box">
+
+<label>
+
+<input type="checkbox">
+
+Complete DSA Notes
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Practice JavaScript
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Attempt Python Quiz
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Read DBMS Chapter
+
+</label>
+
+</div>
+
+</section>
+
+<!-- Progress -->
+
+<section class="progress">
+
+<h2>
+
+📈 Study Progress
+
+</h2>
+
+<div class="progress-box">
+
+<p>DSA</p>
+
+<div class="bar">
+
+<div class="fill dsa">
+
+80%
+
+</div>
+
+</div>
+
+<p>Python</p>
+
+<div class="bar">
+
+<div class="fill python">
+
+60%
+
+</div>
+
+</div>
+
+<p>JavaScript</p>
+
+<div class="bar">
+
+<div class="fill js">
+
+40%
+
+</div>
+
+</div>
+
+<p>HTML</p>
+
+<div class="bar">
+
+<div class="fill html">
+
+90%
+
+</div>
+
+</div>
+
+<p>CSS</p>
+
+<div class="bar">
+
+<div class="fill css">
+
+75%
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Recent Notes --> 
+
+<!-- <section class="recent-notes"> 
+
+<h2>
+
+📒 Recently Saved Notes
+
+</h2>
+
+<div id="recentNotes">
+
+JavaScript will display notes here
+
+</div>
+
+</section>  -->
+
+<!-- Motivation -->
+
+<section class="quote">
+
+<h2>
+
+💡 Daily Motivation
+
+</h2>
+
+<p id="quote">
+
+Stay consistent.
+
+Success follows discipline.
+
+</p>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

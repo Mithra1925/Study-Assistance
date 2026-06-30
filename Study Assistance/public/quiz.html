@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 class="heading">🤖 AI Study Assistant</h1>
+
+</header>
+
+<nav>
+
+<ul class="navbar">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="notes.html">Notes</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="tutorial.html">Tutorials</a></li>
+
+
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="quiz-header">
+
+<h1>Quiz Generator</h1>
+
+<p>
+
+Choose a subject and test your knowledge.
+
+</p>
+
+</section>
+
+<section class="quiz-search">
+
+<input
+
+type="text"
+
+id="quizSearch"
+
+placeholder="🔍 Search Subject"
+
+onkeyup="searchQuizSubject()">
+
+</section>
+
+<section class="quiz-subjects">
+
+<div id="quizSubjects">
+
+<div class="subject-card" onclick="selectSubject('DSA')">📘 DSA</div>
+
+<div class="subject-card" onclick="selectSubject('Python')">🐍 Python</div>
+
+<div class="subject-card" onclick="selectSubject('JavaScript')">⚡ JavaScript</div>
+
+<div class="subject-card" onclick="selectSubject('HTML')">🌐 HTML</div>
+
+<div class="subject-card" onclick="selectSubject('CSS')">🎨 CSS</div>
+
+<div class="subject-card" onclick="selectSubject('Node.js')">🟢 Node.js</div>
+
+<div class="subject-card" onclick="selectSubject('DBMS')">🗄 DBMS</div>
+
+<div class="subject-card" onclick="selectSubject('OS')">💻 OS</div>
+
+</div>
+
+</section>
+
+<section id="quizContainer">
+
+<h2>
+
+Select any subject above.
+
+</h2>
+
+</section>
+
+<script src="quiz.js"></script>
+
+</body>
+
+</html>
